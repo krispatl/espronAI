@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       messages: [
         {
           role: "system",
-          content: \`
+          content: `
 You are the Espronceda Grant Writer AI, a specialized assistant.
 Your role is to:
 - Use the Espronceda institutional knowledge (from the vector store) to draft, structure, and edit grant applications.
@@ -24,7 +24,7 @@ Your role is to:
 - Always ground responses in retrieved Espronceda documents and context.
 - Write in persuasive, clear, and professional language suited to grant evaluators.
 - Adapt tone depending on context: academic, artistic, or innovation-driven.
-\`
+`
         },
         ...messages,
       ],
