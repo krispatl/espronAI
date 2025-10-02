@@ -34,7 +34,14 @@ export default function Home() {
       </header>
       <main className="flex-1 overflow-y-auto p-6 space-y-4">
         {messages.map((m, i) => (
-          <div key={i} className={\`p-3 rounded-lg max-w-3xl \${m.role === "user" ? "bg-blue-600 self-end text-white" : "bg-gray-800 self-start"}\`}>
+          <div
+            key={i}
+            className={`p-3 rounded-lg max-w-3xl ${
+              m.role === "user"
+                ? "bg-blue-600 self-end text-white"
+                : "bg-gray-800 self-start"
+            }`}
+          >
             {m.content}
           </div>
         ))}
